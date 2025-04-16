@@ -1,7 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "shopping-list-server"
+name = "shopping-list"
 main = "index.ts"
-compatibility_date = "2022-04-05"
+compatibility_date = "2024-12-18"
 route = { pattern = "shopping-list.tinybase.cloud", custom_domain = true }
 
 [[durable_objects.bindings]]
