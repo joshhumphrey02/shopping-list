@@ -1,0 +1,13 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "shopping-list-server"
+main = "index.ts"
+compatibility_date = "2022-04-05"
+route = { pattern = "shopping-list.tinybase.cloud", custom_domain = true }
+
+[[durable_objects.bindings]]
+name = "ShoppingListDurableObjects"
+class_name = "ShoppingListDurableObject"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ShoppingListDurableObject"]
